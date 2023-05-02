@@ -37,50 +37,7 @@
 
                     <div class="gallery__content">
 
-                        <div class="gallery__content-item">
-                            <img src="img/image_gallery_1.jpg" alt="Image 1"> <br>
-                            <span class="gallery__content-text" >Image 1</span>
-                        </div>
-
-                        <div class="gallery__content-item">
-                            <img src="img/image_gallery_2.jpg" alt="Image 2"> <br>
-                            <span class="gallery__content-text" >Image 2</span>
-                        </div>
-
-                        <div class="gallery__content-item">
-                            <img src="img/image_gallery_3.jfif" alt="Image 3"> <br>
-                            <span class="gallery__content-text" >Image 3</span>
-                        </div>
-
-                        <div class="gallery__content-item">
-                            <img src="img/image_gallery_4.jpg" alt="Image 4"> <br>
-                            <span class="gallery__content-text" >Image 4</span>
-                        </div>
-
-                        <div class="gallery__content-item">
-                            <img src="img/image_gallery_5.jpg" alt="Image 5"> <br>
-                            <span class="gallery__content-text" >Image 5</span>
-                        </div>
-
-                        <div class="gallery__content-item">
-                            <img src="img/image_gallery_6.jpg" alt="Image 6"> <br>
-                            <span class="gallery__content-text" >Image 6</span>
-                        </div>
-
-                        <div class="gallery__content-item">
-                            <img src="img/image_gallery_7.jpg" alt="Image 7"> <br>
-                            <span class="gallery__content-text" >Image 7</span>
-                        </div>
-
-                        <div class="gallery__content-item">
-                            <img src="img/image_gallery_8.jpg" alt="Image 8"> <br>
-                            <span class="gallery__content-text" >Image 8</span>
-                        </div>
-
-                        <div class="gallery__content-item">
-                            <img src="img/image_gallery_9.jpg" alt="Image 9"> <br>
-                            <span class="gallery__content-text" >Image 9</span>
-                        </div>
+                        
 
                 </div>
             </div>
@@ -98,6 +55,59 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+    
+        var data = [{
+                "img": "img/image_gallery_1.jpg",
+                "id": "balloon"
+            },
+            {
+                "img": "img/image_gallery_2.jpg",
+                "id": "cate"
+            },
+            {
+                "img": "img/image_gallery_3.jfif",
+                "id": "dragon"
+            },
+            {
+                "img": "img/image_gallery_4.jpg",
+                "id": "groot"
+            },
+            {
+                "img": "img/image_gallery_5.jpg",
+                "id": "flareon"
+            },
+            {
+                "img": "img/image_gallery_6.jpg",
+                "id": "forest"
+            },
+            {
+                "img": "img/image_gallery_7.jpg",
+                "id": "fox"
+            },
+            {
+                "img": "img/image_gallery_8.jpg",
+                "id": "glaceon"
+            },
+            {
+                "img": "img/image_gallery_9.jpg",
+                "id": "majora"
+            }, 
+        ];
+
+
+        //looping through each 
+        var _gallery = document.getElementsByClassName("gallery__content")[0],
+            _html = '',
+            i = 1;
+        data.forEach(function(item) {
+            _html += '<div class="gallery__content-item">'
+                            + '<img src="' + item.img + '" alt="Image 1"> <br>'
+                            + '<span class="gallery__content-text">Image ' + i + '</span>'
+                        + '</div>';
+            i++;
+        });
+        _gallery.innerHTML = _html
+
         AOS.init();
       </script>
 </body>
