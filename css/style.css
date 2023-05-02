@@ -657,14 +657,15 @@ li {
     .gallery__wrapper {
         font-size: 40px;
     }
+    
+    .gallery__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
     .gallery__content-item{
-        max-width: 40%;
+        max-width: 80%;
     }
-    .gallery__content-item img{
-        width: 100%;
-        height: 300px;
-    }
-
     .portfolio {
         padding: 50px 0;
     }
