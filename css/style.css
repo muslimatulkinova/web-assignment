@@ -591,7 +591,11 @@ li {
 
 @media (max-width:1025px) {
     .container {
-        max-width: 750~px;
+        max-width: 750px;
+    }
+
+    .header__list{
+        gap: 10px;
     }
 
     .header__content {
