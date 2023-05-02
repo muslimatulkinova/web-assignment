@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <ul class="header__list" data-aos="zoom-in">
+                <li class="header__list-item  "><a href="index.html">Home</a></li>
+                <li class="header__list-item"><a href="about.html">About</a></li>
+                <li class="header__list-item"><a href="gallery.html" >Image Gallery</a></li>
+                <li class="header__list-item active"><a href="portfolio.html">Portfolio</a></li>
+                <li class="header__list-item"><a href="skills.html">Skills</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio__wrapper">
+                    <i class="fa-solid fa-file-powerpoint"></i> <span>Porfolio</span>
+                </div>
+                <p class="portfolio__text">In this page you can see photos and projects <br> of mine, chosen only best ones.</p>
+
+
+                <div class="portfolio__content slide">
+
+                    <div class="portfolio__content-item">
+                    <img src="img/image_gallery_1.jpg" alt="Image 1"> 
+                    </div>
+                    <div class="portfolio__content-item">
+                    <img src="img/image_gallery_2.jpg" alt="Image 2">
+                    </div>
+                    <div class="portfolio__content-item">
+                    <img src="img/image_gallery_3.jfif" alt="Image 3">
+                    </div>
+                    <div class="portfolio__content-item">
+                    <img src="img/image_gallery_4.jpg" alt="Image 4">
+                    </div>
+                    <div class="portfolio__content-item">
+                    <img src="img/image_gallery_5.jpg" alt="Image 5"> 
+                    </div>
+                    <div class="portfolio__content-item">
+                    <img src="img/image_gallery_6.jpg" alt="Image 6">
+                    </div>
+                    <div class="portfolio__content-item">
+                    <img src="img/image_gallery_7.jpg" alt="Image 7">
+                    </div>
+                    <div class="portfolio__content-item">
+                    <img src="img/image_gallery_8.jpg" alt="Image 8">
+                    </div>
+                    <div class="portfolio__content-item">
+                    <img src="img/image_gallery_9.jpg" alt="Image 9">
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">
+                <span>All Rights Are Reserved</span> 
+                <span>Copyright <i class="fa-regular fa-copyright"></i></span> 
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script>
+        AOS.init();
+
+        $('.slide').slick() ;
+    </script>
+</body>
+
+</html>
